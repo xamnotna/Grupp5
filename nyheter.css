@@ -1,0 +1,76 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding:0;
+    font-family: arial;
+    ;
+}
+
+header{
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header h1{
+    color: white;
+    border: 8px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    /* border-radius: 12px; */
+}
+
+nav{
+    padding: 20px;
+
+}
+
+nav ul{
+    white-space: nowrap; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li{
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li .nyh{
+    text-decoration: underline;
+}
+
+.banner{
+    position: relative;
+
+}
+
+.banner .nyheter{
+    background: #464646 ;
+    color: white;
+    padding: 30px;
+    position: absolute;
+    left:47%;
+    top:30%;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing:border-box;
+}
+
+
+
+
+

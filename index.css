@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav {
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    background: rgb(70, 70, 70);
+    padding: 10px;
+    margin-bottom: 5px; 
+    top: 0;
+    position: sticky;
+}
+nav a {
+    color: whitesmoke;
+    background-color: rgb(70, 70, 70);
+    transition: 1s; 
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-right: 15px;
+}
+nav a:hover{
+    color:  rgb(238, 208, 163);
+    transition: 1s;
+}
+#current{
+    background:rgb(29, 29, 29);
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.frontimg {
+    width: 98%;
+    padding: 10px 25px 10px 25px;
+}
+
+.img {
+    width: 5%;
+}

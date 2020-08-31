@@ -1,0 +1,21 @@
+h1 {
+    color:#0a18d1f1;
+    background: slategray;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial;
+
+}
+nav {
+    border-width: 4px;
+    border-style: solid;
+    text-align: center;
+    
+
+}
+.about {
+    line-height: 20px;
+    column-count: 2;
+    column-gap: 50px;
+
+}
