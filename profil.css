@@ -1,21 +1,33 @@
 h1 {
-    color:#0a18d1f1;
-    background: slategray;
+    color:#fffffff1;
+    background: black;
     text-align: center;
     font-size: 40px;
     font-family: Arial;
 
 }
-nav {
-    border-width: 4px;
-    border-style: solid;
+h2 {
     text-align: center;
-    
+}
+h3 {
+    color: white;
+    background: navy;
+    text-align: center;
+    border-width: 70px;
+    font-family: arial;
+}
+nav {
+    color:white;
+    background: gray;
+    border: 2px solid lightslategray;
+    text-align: center;
+    font-family: arial;
+    padding: 25px;
 
 }
 .about {
     line-height: 20px;
-    column-count: 2;
+    column-count: 4;
     column-gap: 50px;
 
 }
