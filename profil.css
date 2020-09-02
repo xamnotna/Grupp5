@@ -1,9 +1,18 @@
-h1 {
-    color:#fffffff1;
-    background: black;
+header{
+    background-color:black;
+    padding: 20px;
     text-align: center;
-    font-size: 40px;
-    font-family: Arial;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header h1{
+    color: white;
+    border: 8px solid white;
+    padding: 6px 12px;
+    display: inline-block;
 
 }
 h2 {
@@ -30,4 +39,24 @@ nav {
     column-count: 4;
     column-gap: 50px;
 
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.profilimages {
+    
+}
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
 }

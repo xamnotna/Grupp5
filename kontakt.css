@@ -1,4 +1,28 @@
   /* 1 - BASE FORM STYLES */
+  body, ul, li, h1, h2, a{
+    margin: 0;
+    padding:0;
+    font-family: arial;
+    ;
+}
+
+header{
+  background-color:black;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+header h1{
+  color: white;
+  border: 8px solid white;
+  padding: 6px 12px;
+  display: inline-block;
+  /* border-radius: 12px; */
+}
 
 
 /* 3 - CHECKBOX STYLES  */
