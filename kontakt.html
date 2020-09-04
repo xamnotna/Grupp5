@@ -7,8 +7,8 @@
   </head>
   <body>
   
-  </body>
-</html>
+
+
     <header>
       <h1>DECO CHAIR</h1>
     </header>
@@ -16,39 +16,61 @@
     <nav class= "main-nav"> 
       <ul>
           <li> <a href="index.html" id="current">Start</a> </li> 
-          <li> <a href="nyheter.html" class="nyh" >Nyheter</a> </li> 
-          <li> <a href="profil.html">Profil</a> </li>
-          <li> <a href="kontakt.html">Kontakt</a> </li>
-          <li> <a href="produkter.html">Produkter</a></a></li>
+          <li> <a href="nyheter.html" >Nyheter</a> </li> 
+          <li> <a href="profil.html" >Profil</a> </li>
+          <li> <a href="kontakt.html"class="kon">Kontakt</a> </li>
+          <li> <a href="produkter.html">Produkter</a></li>
       </ul>
   </nav>
 
   <section class= "banner">
-    <div class="nyheter">
+    <div class="contacts">
         <h2>Kontakta oss</h2>
     </div>
 </sectionclass></section>
 
 <main>
 
-</main>
+
 
     <form class="questions">
       <!-- Gender -->
-      <p>You are a...</p>
+      <p>Du är?</p>
+      <div>
       <input type="radio" id="male" name="gender" />
-      <label for="male">Male</label><br/>
+      <label for="male">Man</label><br/>
       <input type="radio" id="female" name="gender" />
-      <label for="female">Female</label>
-
+      <label for="female">Kvinna</label>
+        </div>
       <!-- Interests -->
-      <p>Who is interested in...</p>
-      <input type="checkbox" id="web" />
-      <label for="web">Web development</label><br/>
-      <input type="checkbox" id="photoshop" />
-      <label for="photoshop">Photoshop</label><br/>
-      <input type="checkbox" id="madona" />
-      <label for="madona">Singing Madona Songs</label>
+      
+      <p>Värdera sidan</p>
+      <div ratingAll>
+        <ul class="rating">
+      <li><input type="radio" id="ett" name="rate" /></li>
+      
+      <li><input type="radio" id="tva" name="rate" /></li>
+      
+      <li><input type="radio" id="tre" name="rate" /></li>
+        </ul>
+
+      
+        
+        <ul class="rating2">
+          <li><label for="ett">1</label><br/></li>
+          <li><label for="tva">2</label><br/></li>
+          <li><label for="tre">3</label></li>
+        </ul>
+      </div>
+      <!--   <ul class="rating">
+          <li><input type="checkbox" id="ett" /></li>
+          <li><label for="ett">1</label><br/></li>
+          <li><input type="checkbox" id="tva" /></li>
+          <li><label for="tva">2</label><br/></li>
+          <li><input type="checkbox" id="tre" /></li>
+          <li><label for="tre">3</label></li>
+          </ul> -->
+
       </form>
 
 
@@ -68,9 +90,34 @@
         <option>By email</option>
         <option>By telephone</option>
       </select>
-      <input type="submit" value="Become a Ninja" />
+      <input type="submit" value="Become a member" />
     </section>
     </form>
-  
+  </main>
+  <div class="social-links">
+    <ul>
+      <li>
+      <a href="https://www.facebook.com/"><img src="https://cdn.pixabay.com/photo/2017/11/10/05/04/facebook-2935402_1280.png" alt="länk till facebook"/></a>
+      </a>
+      </li>
+    <li>
+      <a href="https://www.instagram.com/"><img src="https://cdn.pixabay.com/photo/2017/11/10/05/04/instagram-2935404_1280.png" alt="länk till instagram"/></a>
+    </a>
+  </li>
+    <li>
+      <a href="https://www.twitter.com/"><img src="https://cdn.pixabay.com/photo/2017/11/10/05/05/twitter-2935414_1280.png" alt="länk till twitter"/></a>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.whatsapp.com/"><img src="https://cdn.pixabay.com/photo/2017/11/10/05/05/whatsapp-2935415_1280.png" alt="länk till whatsapp"/></a>
+  </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/"><img src="https://cdn.pixabay.com/photo/2017/11/10/05/05/youtube-2935416_1280.png" alt="länk till youtube"/></a>
+  </a>
+  </li>
+  </ul>
+  </div>
+  <footer><p class="copyright">Copyright 2020 DECOCHAIR</p></footer>
   </body>
 </html>
