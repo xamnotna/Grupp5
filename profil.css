@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding:0;
+    font-family: arial;
+    
+}
 header{
     background-color:black;
     padding: 20px;
@@ -13,12 +23,11 @@ header h1{
     border: 8px solid white;
     padding: 6px 12px;
     display: inline-block;
-
 }
 h2 {
     background: white;
     text-align: center;
-    border: 1px solid black;
+    border: 0px solid black;
     padding: 10px;
 }
 h3 {
@@ -32,34 +41,46 @@ h3 {
     padding: 5px;
 }
 nav {
-    color:white;
-    background: gray;
-    border: 2px solid lightslategray;
-    text-align: center;
-    font-family: arial;
-    padding: 25px;
-    white-space: nowrap;
-    max-width: 1000;
-    margin: 0 auto;
-    position: sticky;
-    top: 25px;
-
+    padding: 36px 0px;
+    border-bottom: 3px solid black;
+    width: 100%;
 }
-nav a {
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav li{
+    font-size: 28px;
+}
+nav li a{
+  text-decoration: none;
+  color: black;
+}
+nav li .prof{ /* FÖR ATT FÅ UNDERLINE FÖR ATT VISA SIDAN DU ÄR PÅ */
+  text-decoration: underline;
+}
+nav li a:hover{
+  text-shadow: 1px 1px gray;
+}
+/*nav a {
     text-decoration: none;
-    color: white;
+    color: black;
     width: 20%;
     display: inline-block;
-}
+}*/
 .about {
+    
     line-height: 20px;
     column-count: 4;
     column-gap: 50px;
     font-family: arial;
     padding: 15px;
+   
 
 }
-ul {
+ .profilImages ul {
     display: block;
     list-style-type: none;
     margin-block-start: 1em;
@@ -67,17 +88,14 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-}
-.profilimages {
-    border: black solid 1px;
+} 
+.profilImages {
+    border: black solid 0px;
     background: white;
     color: black;
     padding: 1px;
     text-align: center;
     column-count: 3;
-}/*
-.profilimages span {
-*/
 }
 .fade {
   -webkit-animation-name: fade;
@@ -96,9 +114,33 @@ ul {
   to {opacity: 1}
 }
 
+@media only screen and (max-width: 850px) {
+  .about {
+    column-count: 2;
+}
+    
+}
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+@media only screen and (max-width: 650px) {
+  .text {font-size: 11px
+  }
+  
+  .main-nav ul {
+      display: flex;
+      flex-direction: column;
+    }
+  .profilImages li{
+    margin: 20px auto;
+    display: inline-block;
+    column-count: auto;
+
+  }
+  .about {
+    column-count: auto;
+
+
+}
+    
 }
 
 .social-links {

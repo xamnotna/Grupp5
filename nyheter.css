@@ -1,12 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
 body, ul, li, h1, h2, a{
     margin: 0;
     padding:0;
     font-family: arial;
-    ;
+    
 }
-/* a {
+ input {
     cursor: pointer;
-} */
+} 
 
 header{
     background-color:black;
@@ -25,13 +29,15 @@ header h1{
     display: inline-block;
     /* border-radius: 12px; */
 }
-
+/* NAV KOD */
 nav {
-    padding: 20px;
+    padding: 36px 0px;
     border-bottom: 3px solid black;
+    width: 100%;
 
 }
 
+/* //////////ta bort///////////////
 nav ul {
     white-space: nowrap; 
     max-width: 1200px;
@@ -39,23 +45,54 @@ nav ul {
 }
 
 nav li{
-    width: 25%;
+    width: 20%;
     display: inline-block;
     font-size: 28px;
-} 
+}  ///////////////ta bort det här//////////////*/
 
+
+/* /////////////copy////////////////// */
+nav ul {
+     /* white-space: nowrap; 
+    max-width: 1200px; */
+    
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+   }
+   
+nav li{
+    /*width: 20%;
+    display: inline-block;*/
+    font-size: 28px;
+}
+/* ///////////copy/////////////// */
 nav li a{
     text-decoration: none;
     color: black;
 }
 
-nav li .nyh{
+
+nav li .nyh{ /* FÖR ATT FÅ UNDERLINE FÖR ATT VISA SIDAN DU ÄR PÅ */
     text-decoration: underline;
 }
 
 nav li .kon{
     text-decoration: underline;
 }
+/* /////////////copy////////////// */
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 650px) {
+    
+    .main-nav ul 
+    {
+      flex-direction: column;
+    }
+  } 
+
+  /* /////////////copy////////////// */
+/* ////////////////NAV KOD SLUT////////////////////*/
+
 
 .banner{
     position: relative;
@@ -98,8 +135,8 @@ nav li .kon{
 
 }
 main{
-    max-width: 100%;
-    width: 1200px;
+    max-width: 70%;
+    width: 1200px; 
     margin: 140px auto;
     padding: 0 40px;
     box-sizing:border-box;
@@ -125,6 +162,7 @@ main{
 
 
 article h2{
+    padding-top: 10px;
     font-size: 48px;
     border-top: 3px solid black;
     
@@ -135,20 +173,20 @@ article p{
     color: #03080a;
 }
 
-.nyhetsbild {
+.nyhetsBild {
     text-align: center;
     margin: 80px 5px;
     white-space: nowrap;
 }
 
-.nyhetsbild li {
+.nyhetsBild li {
     display: inline-block;
     width:40%;
     margin: 20px 5%;
 
 }
 
-.nyhetsbild li img{
+.nyhetsBild li img{
     max-width: 70%;
 }
 section.signup{
@@ -265,14 +303,14 @@ footer{
     
 }
 
-/* pseudo classes  */
+/*/////// pseudo classes ////////// */
 
 nav li a:hover{
     text-shadow: 1px 1px gray;
     
 }
 
-.nyhetsbild li:hover{
+.nyhetsBild li:hover{
     opacity: 0.7;
     
 }

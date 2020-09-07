@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body, ul, li, h1, h2, a{
+  margin: 0;
+  padding:0;
+  font-family: arial;
+}
+
+
+header{
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header h1{
+    color: white;
+    border: 8px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    /* border-radius: 12px; */
+}
+
+nav {
+    padding: 36px 0px;
+    border-bottom: 3px solid black;
+    width: 100%;
+
+}
+
+nav ul {
+    /* white-space: nowrap; 
+    max-width: 1200px;
+    margin: 0 auto;*/
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+   }
+   
+nav li{
+    /*width: 20%;
+    display: inline-block;*/
+    font-size: 28px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+nav li .produkt{ /* FÖR ATT FÅ UNDERLINE FÖR ATT VISA SIDAN DU ÄR PÅ */
+    text-decoration: underline;
+}
+
+nav li .kon{
+    text-decoration: underline;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 650px) {
+    /* .text {font-size: 11px}
+    p {font-size: 11px;} */
+    .main-nav ul {
+      flex-direction: column;
+    }
+  }
+h2{
+    text-align: center;
+}
+  li{
+      display: inline;
+      
+  }
+  .stolar{
+    /* border:4px solid #ffa9a9; */
+    text-align: center;
+  }
+  .stolar img{
+    border:4px solid #ffa9a9;
+  }
+
+  .social-links {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+    margin: 0;
+    text-align: center;
+  }
+  .social-links li{
+    width: 15%;
+    display: inline-block;
+  }
+  .social-links img {
+    width: 30%;
+  }
+
+  footer{
+    display: inline-block;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background:#000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+/*psudo-classer*/
+
+nav li a:hover{
+    text-shadow: 1px 1px gray;
+    
+}
+
+.stolar li img:hover{
+    opacity: 0.7;
+    border:4px solid #95bdfa;
+}
+
